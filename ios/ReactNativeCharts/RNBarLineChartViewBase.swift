@@ -46,11 +46,13 @@ class RNBarLineChartViewBase: RNYAxisChartViewBase {
         barLineChart.drawBordersEnabled = enabled;
     }
 
-    func _setBorderColor(_ color: Int) {
+    @nonobjc
+    func setBorderColor(_ color: Int) {
         
         barLineChart.borderColor = RCTConvert.uiColor(color);
     }
 
+    @nonobjc
     func setBorderWidth(_ width: CGFloat) {
         barLineChart.borderLineWidth = width;
     }
